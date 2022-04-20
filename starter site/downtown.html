@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Downtown Harrisonburg</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        nav {
+         display: grid;
+         grid-template-columns:repeat(5, auto);
+         grid-auto-rows:minmax(100px, auto);
+         justify-content:space-evenly;
+         font-family:'Courier New', Courier, monospace;
+        font-size: 20px;
+     }
+        body{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            background-color: #F2E9E0;
+        }
+     .self {
+         align-self:center;
+     } 
+     .boxes {
+            display:grid;
+            grid-template-columns:repeat(2, 1fr);
+            grid-template-areas:
+        "box1 box1 box1 box2 box2 box2";
+        justify-content: space-evenly;
+        }
+        .box1{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 20px;
+            text-align: center;
+            padding-right: 15px;
+        }
+        .box2{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 20px;
+            text-align: center;
+            padding-left: 15px;
+        }
+footer {
+            display:flex;
+            justify-content:flex-end;
+            align-items:flex-end;
+            text-align:right;
+}
+     </style>
+</head>
+<body>
+    <nav>
+        <div class="self"><a href="index.html">Home</a></div>
+        <div class="self"><a href="downtown.html">Downtown Harrisonburg</a></div>
+        <div class="self"><a href="jmu.html">JMU</a></div>
+        <div class="self"><a href="links.html">Links</a></div>
+        <div class="self"><a href="photos.html">Photos</a></div>
+   </nav>
+<div class="boxes">
+    <div class="box1">
+       <img src="images/towncenter.JPG" style="width: 100%">
+        <p>Located in the valley of the Shenandoah Mountains, Harrisonburg is known mostly as a college hub, however it is also known for the agricultural and hiking community in and around the town. Harrisonburg, being a part of the valley, makes up 2/3rds of Virginia's agriculture. In the past few years, Harrisonburgs population has been growing about 1,000 families per year.</p>
+    </div>
+    <div class="box2">
+        <img src="images/court house.JPG" style="width: 100%">
+        <p>Being so close to the Shenandoah Mountains, Harrisonburg has a big hiking and backpacking community. Some people will travel 4 hours to come hike in the trails near Harrisonburg. There are trails for every kind of hiker, whether you like rock scrambles or waterfalls. </p>
+    </div>
+</div>
+<footer>
+    Katie James<br>
+    Media Arts and Design 307<br>
+    Harrisonburg, VA<br>
+</footer>
+
+</body>
+</html>

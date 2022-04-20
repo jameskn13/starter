@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starter Site homepage</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+       nav {
+        display: grid;
+        grid-template-columns:repeat(5, auto);
+        grid-auto-rows:minmax(100px, auto);
+        justify-content:space-evenly;
+        font-family:'Courier New', Courier, monospace;
+        font-size: 20px;
+        
+    }
+    body{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            background-color: #F2E9E0;
+        }
+        .self {
+            align-self:center;
+        } 
+        .container {
+            position: relative;
+            text-align: center;
+            color: white;
+    }
+        .right {
+            position: absolute;
+            grid-template-columns:repeat(3, 1fr);
+            top: 50%;
+            left: 20%;
+            transform: translate(-50%, -50%);
+            font-size: 270%;
+            font-family: fantasy;
+            color: black;
+    }
+        .rightbelow{
+            position: absolute;
+            grid-template-columns:repeat(3, 1fr);
+            top: 60%;
+            left: 30%;
+            transform: translate(-50%, -50%);
+            font-size: 270%;
+            font-family: fantasy;
+            color: black;
+    }
+        .boxes {
+            display:grid;
+            grid-template-columns:repeat(3, 1fr);
+            grid-template-areas:
+        "box1 box1 box2 box2 box3 box3";
+        justify-content: space-evenly;
+        }
+        .box1{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 20px;
+            text-align: center;
+            padding-right: 10px;
+            padding-top: 10px;
+        }
+        .box2{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 20px;
+            text-align: center;
+            padding-top: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        .box3{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 20px;
+            text-align: center;
+            padding-left: 10px;
+            padding-top: 10px;
+        }
+        footer {
+            display:flex;
+            justify-content:flex-end;
+            align-items:flex-end;
+            text-align:right;
+            padding-top: 20px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+}
+    </style>
+</head>
+<body>
+    <nav>
+         <div class="self"><a href="index.html">Home</a></div>
+         <div class="self"><a href="downtown.html">Downtown Harrisonburg</a></div>
+         <div class="self"><a href="jmu.html">JMU</a></div>
+         <div class="self"><a href="links.html">Links</a></div>
+         <div class="self"><a href="photos.html">Photos</a></div>
+    </nav>
+
+    <div class="container">
+        <img src="images/art2.jpg" alt="art" style="width:100%;">
+        <div class="right">In the heart</div>
+        <div class="rightbelow">of Harrisonburg</div>
+      </div>
+
+    <div class="boxes">
+         <div class="box1">
+             <img src="images/church.JPG" style="width: 100%">
+             <p>Behind the court building lies one of Harrisonburg's many churches.</p>
+         </div>
+         <div class="box2">
+             <img src="images/dukes.JPG" style="width: 100%">
+             <p>The popular bar, Dukes.</p>
+         </div>
+         <div class="box3">
+             <img src="images/fuck12.JPG" style="width: 100%">
+             <p>A message etched on a mail box in Downtown Harrisonburg.</p>
+         </div>
+    </div>
+<footer>
+    Katie James<br>
+    Media Arts and Design 307<br>
+    Harrisonburg, VA<br>
+</footer>
+</body>
+</html>

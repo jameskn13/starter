@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JMU life</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        nav {
+         display: grid;
+         grid-template-columns:repeat(5, auto);
+         grid-auto-rows:minmax(100px, auto);
+         justify-content:space-evenly;
+         font-family:'Courier New', Courier, monospace;
+        font-size: 20px;
+     }
+     body{
+         background-color: #F2E9E0;
+         font-family: Georgia, 'Times New Roman', Times, serif;
+     }
+     .self {
+         align-self:center;
+     } 
+     .boxes {
+            display:grid;
+            grid-template-columns:repeat(2, 1fr);
+            grid-template-areas:
+        "box1 box1 box1 box2 box2 box2";
+        justify-content: space-evenly;
+        }
+        .box1{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 20px;
+            text-align: center;
+            padding-right: 15px;
+        }
+        .box2{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 20px;
+            text-align: center;
+            padding-left: 15px;
+        }
+     </style>
+</head>
+<body>
+    <nav>
+        <div class="self"><a href="index.html">Home</a></div>
+        <div class="self"><a href="downtown.html">Downtown Harrisonburg</a></div>
+        <div class="self"><a href="jmu.html">JMU</a></div>
+        <div class="self"><a href="links.html">Links</a></div>
+        <div class="self"><a href="photos.html">Photos</a></div>
+   </nav>
+   <div class="boxes">
+    <div class="box1">
+       <img src="images/quad.JPG" style="width: 100%">
+        <p>James Madison University was founded on February 29th, 1908. Having 21,000 students enrolled and over 720 acres of campus, JMU is ranked #3 in Best Undergraduate Teaching and #3 in Best Regional schools. The most popular of all the majors at JMU are the Health Related professions followed closely by Business, Communications and Design.</p>
+    </div>
+    <div class="box2">
+        <img src="images/carrier.JPG" style="width: 100%">
+        <p>Being a large school, JMU has many clubs, sports and groups that allow the majority of the student body to get involved in the JMU life. James Madison University also offers many job opportunities to its current students and past alumni. </p>
+    </div>
+</div>
+</body>
+</html>

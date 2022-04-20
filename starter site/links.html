@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        nav {
+         display: grid;
+         grid-template-columns:repeat(5, auto);
+         grid-auto-rows:minmax(100px, auto);
+         justify-content:space-evenly;
+         font-family:'Courier New', Courier, monospace;
+        font-size: 20px;
+     }
+     body{
+         background-color: #F2E9E0;
+     }
+     .self {
+         align-self:center;
+     } 
+     .boxes {
+            display:grid;
+            grid-template-columns:repeat(3, 1fr);
+            grid-template-areas:
+        "box1 box1 box2 box2 box3 box3";
+        justify-content: space-evenly;
+        }
+        .box1{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 20px;
+            text-align: center;
+            padding-top: 10px;
+            padding-right: 10px;
+        }
+        .box2{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 20px;
+            text-align: center;
+            padding-top: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        .box3{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 20px;
+            text-align: center;
+            padding-top: 10px;
+            padding-left: 10px;
+        }
+        footer {
+            display:flex;
+            justify-content:flex-end;
+            align-items:flex-end;
+            text-align:right;
+}
+     </style>
+</head>
+<body>
+    <nav>
+        <div class="self"><a href="index.html">Home</a></div>
+        <div class="self"><a href="downtown.html">Downtown Harrisonburg</a></div>
+        <div class="self"><a href="jmu.html">JMU</a></div>
+        <div class="self"><a href="links.html">Links</a></div>
+        <div class="self"><a href="photos.html">Photos</a></div>
+   </nav>
+   <div class="boxes">
+    <div class="box1">
+        <a href="https://www.shenandoahbicycle.com"><img src="images/concretejungle.JPG" style="width: 100%"></a>
+        <p>With the large biking community in Harrisonburg, Shenandoah Bike Co. is the best for tire repair.</p>
+    </div>
+    <div class="box2">
+        <a href="https://www.catscradleva.org"><img src="images/furryfriend.JPG" style="width: 100%"></a>
+        <p>Become a foster parent!! But be careful because you will get attached.</p>
+    </div>
+    <div class="box3">
+        <a href="https://www.jmu.edu/registrar/students/graduation.shtml"><img src="images/road.JPG" style="width: 100%"></a>
+        <p>Take a stroll down memory lane at JMU when you're submitting you graduation application.</p>
+    </div>
+</div>
+<div class="boxes">
+    <div class="box1">
+        <a href="https://www.esf.edu/pubprog/brochure/leaves/leaves.htm"><img src="images/tree.JPG" style="width: 100%"></a>
+        <p>Watch the beauty of fall in Harrisonburg.</p>
+    </div>
+    <div class="box2">
+        <a href="https://www.jmu.edu/arts/public-art/centennial-fountain/centennial-fountain.shtml"><img src="images/fountain.JPG" style="width: 100%"></a>
+        <p>Have you really gone to JMU if you haven't climbed in the fountain.</p>
+    </div>
+    <div class="box3">
+        <a href="https://www.lib.jmu.edu"><img src="images/carrier.JPG" style="width: 100%"></a>
+        <p>Come down to Carrier Library! Theres a 24 hour room for when you need to finish you sites for your class!</p>
+    </div>
+</div>
+<div class="boxes">
+    <div class="box1">
+        <a href="https://www.jmu.edu/quadcam/"><img src="images/quad.JPG" style="width: 100%"></a>
+        <p>Stalk people on the QuadCam!</p>
+    </div>
+    <div class="box2">
+        <a href="http://dukesbarandgrill.com"><img src="images/dukes.JPG" style="width: 100%"></a>
+        <p>Check out DUKES!!</p>
+    </div>
+    <div class="box3">
+        <a href="https://www.atheists.org"><img src="images/church.JPG" style="width: 100%"></a>
+        <p>There's so many religious options in Harrisonburg.</p>
+    </div>
+</div>
+<footer>
+    Katie James<br>
+    Media Arts and Design 307<br>
+    Harrisonburg, VA<br>
+</footer>
+</body>
+</html>
